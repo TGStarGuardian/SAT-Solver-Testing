@@ -23,7 +23,7 @@ class Kissat_Solver(Solver):
 		self.__path = path
 	
 	def initialise_input(self, **kwargs):
-		return DIMACS.create_file(clauses = kwargs['clauses'], path = "./test/" + str(kwargs['test_id']) + ".cnf", num_vars = kwargs['num_vars'])
+		return DIMACS.create_file(clauses = kwargs['clauses'], path = "./formulae/" + str(kwargs['test_id']) + ".cnf", num_vars = kwargs['num_vars'])
 	
 	def solve(self, cnf_path):
 		# start a process
