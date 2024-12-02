@@ -91,4 +91,3 @@ class CPM_Generator(Clause_Generator):
 #clause = generator.generate_clause(10)
 #print(clause)
 
-
